@@ -1,0 +1,36 @@
+﻿<Window x:Class="Tp_IHM_AnnuaireWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tp_IHM_AnnuaireWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <GroupBox Header="Information Contact" Width="224" HorizontalAlignment="Left">
+                <StackPanel x:Name="grid" Orientation=" Vertical">
+                    <TextBlock TextWrapping="Wrap" Height="19" Width="784" HorizontalAlignment="Left"><Run Text="Contact"/><LineBreak/><Run/></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Nom :" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <TextBox x:Name="nomTextBox" TextWrapping="Wrap" RenderTransformOrigin="0.838,0.465" Margin="15,0,0,0" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Content="Prénom :" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <TextBox x:Name="prenomTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Age :" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <TextBox x:Name="ageTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Width="100" Margin="20,10,0,0"/>                    
+                    </StackPanel>
+                    <Button x:Name="ValiderBtn" Content="Valider" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ValiderBtn_Click" Margin="0,10,0,0"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Affichage des résultats" HorizontalAlignment="Center" Height="432" Margin="0,-160,0,0" Width="300">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="AffichageTextBlock" Height="414" Width="789" TextWrapping="Wrap"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

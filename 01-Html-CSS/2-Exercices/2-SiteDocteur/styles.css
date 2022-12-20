@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(117, 117, 117);
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: rgb(169, 169, 169);
+    height: 40px;
+}
+
+div.head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header>.head>a{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    font-size: bold;
+}
+
+div.cabinet a{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#Strong{
+    border: 1px solid white;
+    height: 40px;
+    padding: 10px;
+}
+
+.Button button{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(169, 169, 169);
+    border: 1px solid white;
+    height: 40px;
+    align-items: center;
+}
+
+div.Button>button>a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titre{
+    margin: 20px 0;
+}
+
+.titre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+    color: white;
+    height: 50px;
+    align-items: center;
+    font-size: 2em;
+}
+
+div.images{
+    width: 80%;
+}
+
+.image1{
+    width: 49%;
+    height: 100%;
+}
+
+.image2{
+    width: 49%;
+    height: 100%;
+}
+
+footer{
+    background-color: lightgray;
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    text-decoration: underline;
+    margin: 30px 0 50px 0;
+}
+
+.TableauHoraires{
+
+}
+
+table{
+    background-color: white;
+    /* border-collapse: collapse; */
+    border: 1px solid black;
+    margin: 0 0 40px 0;
+}
+
+th{
+    background-color: rgb(117, 117, 117);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td{
+    background-color: rgb(169, 169, 169);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.td{
+    text-align:center;
+}
+
+div.validBouton{
+    /* justify-content: center; */
+    
+}
+
+.ValidBouton{
+    margin: 5px 10px 0 30px;
+    
+}

@@ -1,0 +1,27 @@
+.card {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.card-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.img {
+    max-width: 300px;
+    transform: translateX(-21px);
+}
+.category {
+    margin: 15px auto;
+    height: 50px;
+}
+.difficulte {
+    /* display: flex; */
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: larger;
+}

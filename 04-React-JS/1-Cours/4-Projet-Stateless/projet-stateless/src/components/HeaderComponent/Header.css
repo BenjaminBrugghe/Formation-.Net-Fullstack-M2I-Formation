@@ -1,0 +1,15 @@
+.banner{
+    align-items: center;    
+    display:flex;    
+    justify-content: left;
+    background-color: rgb(40, 44, 52);
+    color: white;
+    border-bottom:2px solid rgb(226, 13, 23);
+  }
+  .header img {
+    height: 150px;
+  }
+
+  .description{
+      transform:translateX(40%);
+  }

@@ -1,0 +1,58 @@
+Type de projet : 
+Application web ASP.NET Core (modèle-vue-contrôleur)
+	Authentification : aucune
+	Décocher "HTTPS"
+
+Properties > launchSettings.Json
+	> Pour modifier les ports
+
+Dossier "wwwroot" = Dossier "public" dans React
+	> Pour toutes les ressources
+
+Les fichiers .cshtml = Razor
+	> html, CSS, JS, C#
+	
+@ { } >>> Permet d'écrire du C#
+
+Views > Shared > _Layout.cshtml 
+	>>> Correspond au Header dans la page web
+
+Layout l.26-27-28 >>> Rajouter un <li> vers "Personne"
+	>>> Rajouter 
+	
+	@{ViewData["Title"] = "Personne Index";}
+	
+	dans Personne/Index.cshtml
+	
+asp-action (dans .cshtml) fait référence aux méthodes du Controller.cs
+
+asp-for (ex : @Model.Lastname) permet de binder (et récupérer) les valeurs dans l'input, grâce au formulaire Type="Submit" et à sa method="post"
+
+****************************************************
+Cours Cookies
+
+packages :
+	Microsoft.AspNETCore.session
+	Newtonsoft.Json
+	
+Sur la page web : Console > Application > Cookies
+
+***************************************************
+Pour les url images (en BDD), le chemin commence par ~/
+		> voir : Formation AspNETCore > TpIHMAnnuaireAspNETCore Sql dans : TpListCOntactClassAdoNet
+
+Dans Program.cs
+AddScoped != AddTransient (le 2ème crée et supprime)
+
+********************************************************
+Cours API
+Projet API web ASP.NET Core > Décocher HTTPS
+
+C:\HTML_CSS\HTML-CSS\10-React-JS\2-Exercices\Ex2-API-CoursList\exercice-api-courslist
+
+*******************************************************
+JSON Web Tokens
+
+Package :
+	Microsoft.AspNetCore.Authentication.JwtBearer
+

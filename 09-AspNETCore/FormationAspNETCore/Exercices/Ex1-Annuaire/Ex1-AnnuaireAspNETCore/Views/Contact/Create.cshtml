@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Contacts";
+}
+
+@model Contact
+
+<h1>Add contacts</h1>
+
+<div class="container">
+    <form asp-action="Create" asp-controller="Contact" method="post">
+        <div class="card details">
+            <input placeholder="Nom" asp-for="@Model.Lastname" />
+        </div>
+        <div class="card details">
+            <input placeholder="Prénom" asp-for="@Model.Firstname" />
+        </div>
+
+        <input required asp-for="@Model.DateOfBirth" asp-format="{0:yyyy-MM-ddThh:mm}" class="col-4 col-6 p-1 form-control" />
+
+        <div class="card details">
+            <input placeholder="Téléphone" asp-for="@Model.PhoneNumber" />
+        </div>
+        <div class="card details">
+            <input placeholder="Email" asp-for="@Model.Email" />
+        </div>
+        <div class="card details">
+            <input placeholder="Numéro" asp-for="@Model.ContactAddress.Number" />
+        </div>
+        <div class="card details">
+            <input placeholder="Rue" asp-for="@Model.ContactAddress.RoadName" />
+        </div>
+        <div class="card details">
+            <input placeholder="Code Postal" asp-for="@Model.ContactAddress.PostalCode" />
+        </div>
+        <div class="card details">
+            <input placeholder="Ville" asp-for="@Model.ContactAddress.Town" />
+        </div>
+        <div class="card details">
+            <input placeholder="Pays" asp-for="@Model.ContactAddress.Country" />
+        </div>
+        <input type="submit" class="btn btn-primary form-control" value="Ajouter" />
+    </form>
+</div>
+
+<a asp-action="Index" asp-controller="Contact" asp-route-add="false">
+    <input type="button" class="btn btn-secondary form-control" value="Annuler" />
+</a>

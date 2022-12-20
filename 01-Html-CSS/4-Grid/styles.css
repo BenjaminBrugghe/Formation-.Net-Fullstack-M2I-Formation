@@ -1,0 +1,106 @@
+h1{text-decoration: underline;}
+body{text-align: center;}
+
+.container{
+    border: 2px solid black;
+    display: grid;
+    /* height: 600px; */
+    /* width: 1000px; */
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-columns: auto 300px auto; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-rows: 150px 150px 150px;
+
+}
+
+.item{
+    border: 1px dashed black;
+    background-color: lightgray;
+    font-weight: bold;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.AA{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.BB{
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.CC{
+    grid-column: 1;
+    grid-row: 3;
+
+}
+
+.DD{
+    grid-column: 3;
+    grid-row: 2;
+
+}
+
+.EE{
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.FF{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.GG{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.HH{
+    grid-column: 1;
+    grid-row: 1;
+
+}  
+
+/* .II{
+    grid-column: 1;
+    grid-row: 1;
+} */
+
+
+
+/*
+CONTAINER : display
+        grid-template-columns => Définir le nombre et la taille des colonnes
+        grid-template-rows => Définir le nombre et la taille des ligne
+        grid-template-areas =>
+        grid-template =>
+        justify-content =>
+        align-content =>
+        place-content =>
+        justify-items =>
+        align-items =>
+        place-items =>
+        grid-column-gap =>
+        grid-rox-gap =>
+        grid-auto-columns : 150px => définit la largeur des colonnes par défaut 
+        grid-auto-rows : 100px => définit la hauteur des lignes par défaut 
+        grid-auto-flow => définit l'emplacement des éléments par défaut (row | column)
+
+ITEM :  grid-column =>
+        grid-row =>
+        grid-area =>
+        grid-column-start =>
+        grid-column-end =>
+        grid-row-start =>
+        grid-row-end =>
+        justify-self =>
+        align-self =>
+        place-self =>
+*/

@@ -1,0 +1,2 @@
+﻿SELECT * FROM TableEx1 AS tab1
+ORDER BY tab1.Titre ASC

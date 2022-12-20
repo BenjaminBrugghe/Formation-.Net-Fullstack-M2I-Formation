@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Liste des Contacts";
+}
+@model List<Contact>
+
+<div class="container">
+    <table class="table table-striped">
+
+        <!-- En-tete du tableau-->
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+
+        <!-- Partie Data du tableau -->
+        <tbody>
+            @foreach (Contact c in Model)
+            {
+                <tr>
+                    <th scope="row">@c.Id</th>
+                    <td>@c.Lastname</td>
+                    <td>@c.Firstname</td>
+                    <td>@c.Email</td>
+                    <td>
+                        <a asp-action="Details" asp-controller="Contact" asp-route-id="@c.Id" asp-route-add="false">
+                            <input type="button" class="btn btn-primary" value="Détails" />
+                        </a>
+                        <a asp-action="Edit" asp-controller="Contact" asp-route-id="@c.Id" asp-route-add="false">
+                            <input type="button" class="btn btn-warning" value="Edit" />
+                        </a>
+                        <a asp-action="Delete" asp-controller="Contact" asp-route-id="@c.Id" asp-route-add="false">
+                            <input type="button" class="btn btn-danger" value="Delete" />
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-action="Create" asp-controller="Contact" asp-route-add="false">
+        <input type="button" class="btn btn-success" value="Ajouter" />
+    </a>
+</div>

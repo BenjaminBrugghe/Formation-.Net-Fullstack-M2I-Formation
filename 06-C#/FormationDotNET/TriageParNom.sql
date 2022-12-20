@@ -1,0 +1,4 @@
+﻿SELECT * FROM TableEx1 AS tab1
+
+SELECT * FROM TableEx1 AS tab1
+ORDER BY tab1.Nom ASC

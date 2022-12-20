@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    
+}
+
+.titre{
+    font-size: 2em;
+}
+.strong{
+    font-size: 2em;
+}
+
+.container{
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black
+}
+
+mark{
+    background-color: rgb(216, 214, 100);
+}

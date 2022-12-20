@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titre{
+    font-size: 2em;
+}
+.strong{
+    font-size: 2em;
+}
+
+.tableau{
+    border: 1px solid white;
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black;
+    background-color: orangered;
+
+}
+
+.Title{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.lignes{
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+}
+
+.ligne3{
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#IDinput{
+    width: 35px;
+    height: 25px;
+    margin: 0 0 0 15px;
+}
+
+.Button1{
+    height: 31px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(48, 48, 48);
+}
+
+.Button2{
+    height: 35px;
+    width: 90%;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Button3{
+    height: 35px;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+
+}

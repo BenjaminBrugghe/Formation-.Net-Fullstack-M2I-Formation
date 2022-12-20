@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titre{
+    font-size: 2em;
+}
+.strong{
+    font-size: 2em;
+}
+
+.tableau{
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black;
+}
+
+#Result{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.tab{
+    border: 1px solid black;
+    margin: 0 4px 4px 0;
+    width: 112px;
+    display: inline-block;
+}

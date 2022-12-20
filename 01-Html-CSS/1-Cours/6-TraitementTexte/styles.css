@@ -1,0 +1,30 @@
+h1{
+    text-decoration: underline;
+}
+
+body{
+    text-align: center;
+}
+
+.mybold{
+    font-weight: bold;
+}
+
+.myItalic{
+    font-style: italic;
+}
+
+mark{
+    background-color: green;
+}
+
+.green{
+    background-color: green;
+}
+
+
+
+
+footer{
+    background-color: lightgray;
+}

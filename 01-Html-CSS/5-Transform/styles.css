@@ -1,0 +1,127 @@
+h1 {text-decoration: underline;}
+
+:root{
+    --Blanc : white;
+    --Fond54 : rgb(54,54,54) ;
+    --Fond77 : rgb(77,77,77) ;
+    --Fond92 : rgb(92,92,92) ;
+    --Shadow : rgb(34,34,34) ;
+    --Orange : rgb(255,68,21) ;
+}
+
+body {
+    text-align: center;
+    background-color: var(--Fond54);
+    color: var(--Blanc);
+    font-family: Calibri;
+}
+
+header{
+    background-color: var(--Fond77);
+    margin-top: 10px;
+    border: 1px solid var(--Blanc);
+    border-radius: 10px;
+    box-shadow: 21px 12px 2px var(--Shadow);
+    padding: 20px;
+}
+
+.titre {
+
+}
+
+nav{
+    border-top: 1px solid var(--Blanc);
+}
+
+.navig ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a{
+    text-decoration: none;
+    color: var(--Blanc);
+}
+
+.crumb a::after{
+    display: inline-block;
+    color: var(--Blanc);
+}
+
+.btn{
+    font-size: 10px;
+    border: 1px solid var(--Blanc);
+    padding: 5px;
+    border-radius: 6px;
+    margin: 10px;
+    box-shadow: 6px 6px 2px var(--Shadow);
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.btn:hover{
+    /* font-size: 15px; */
+    /* border: 2px solid var(--Blanc); */
+    background-color: var(--Fond92);
+    border-color: var(--Orange);
+    color: var(--Orange);
+    transform: scale(1.10);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.vignette{
+    background-color: var(--Fond77);
+    margin: 40px 0;
+    border: 1px solid var(--Blanc);
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px var(--Shadow);
+    padding: 20px 0;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.vignette:hover{
+    transform: scale(1.10);
+    border: 1px solid var(--Orange);
+    background-color: var(--Fond92);
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: var(--Orange);
+}
+
+.texte{
+    padding: 25px 0 0 0;
+    font-size: 25px;
+    
+}
+
+footer{
+    background-color: var(--Fond77);
+    margin-top: 40px;
+    border: 1px solid var(--Blanc);
+    border-radius: 10px;
+    box-shadow: 21px 12px 2px var(--Shadow);
+    padding: 20px;
+}

@@ -1,0 +1,13 @@
+.green {
+    font-weight: bold;
+    color: green;
+    font-size: 30px;
+}
+.red {
+    font-weight: bold;
+    color: darkred;
+    font-size: 30px;
+}
+.icon {
+    font-size: 30px;
+}

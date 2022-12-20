@@ -1,0 +1,17 @@
+********** Cours WPF **********
+
+Les classes sont divisées en 2 : Xaml et C#
+
+		Xaml
+<Grid> correspond au <Body> en html
+
+Boite à outils 
+
+Déclencher un event : cliquer sur l'élément, puis bouton Eclair (dans la fenêtre propriétés)
+
+Dans Title, rajouter : 
+WindowStartupLocation="CenterScreen"
+ResizeMode="NoResize"
+
+Si <Groupbox>, il faut un <Stackpanel>
+

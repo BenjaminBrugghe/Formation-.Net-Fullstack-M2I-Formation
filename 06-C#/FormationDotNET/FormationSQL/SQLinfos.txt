@@ -1,0 +1,45 @@
+********** SQL **********
+
+Terminal => sqllocaldb
+	affiche les infos
+	
+sqllocaldb i
+
+sqllocaldb c PRF2022 => crée un BDD
+
+sqllocaldb s PRF2022 => Démarre la BDD
+
+sqllocaldb p PRF2022 => Stoppe la BDD
+
+sqllocaldb d PRF2022 => Delete la BDD
+
+VS => Affichage => Explorateur de serveurs
+	connexion à la BDD => Microsoft SQL server
+	
+Bouton connexion à la BDD =>
+	nom du serveur : (localDB)\PRF2022 => Tester la connexion
+	Renommer la BDD en : PRF2022.dbo
+
+Table => Ajouter un nouvelle table
+	Créer : Nom - nvarchar(50)
+	
+		CREATE TABLE [dbo].[utilisateur]
+(
+	[Id] INT IDENTITY (1,1) NOT NULL PRIMARY KEY, 
+    [Nom] VARCHAR(50) NOT NULL, 
+    [Email] VARCHAR(50) NOT NULL, 
+    [Telephone] VARCHAR(13) NOT NULL
+)
+	=> Mettre à jour
+	
+Copier le script dans "table.sql"
+	Icone Connexion -> local -> PRF2022 -> Se connecter
+
+Pour modifier une table (ajout de [Prenom] )
+	=> DROP TABLE [utilisateur]
+	
+Nouvel élément => INSERT_UTILISATEUR.sql
+
+utilisateur => Afficher les données de la table
+	=> Bouton Script => Copier dans Table.sql et supprimer les ID
+	

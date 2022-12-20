@@ -1,0 +1,51 @@
+﻿<Window x:Class="CoursWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoursWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid >        
+        <StackPanel Orientation="Vertical">
+            <Menu Background="#FF463E3E">
+                <MenuItem Header="Fichier" Background="#FF888686">
+                    <MenuItem Header="Nouveau"/>
+                    <MenuItem Header="Ouvrir"/>
+                    <MenuItem Header="Enregistrer"/>
+                    <Separator/>
+                    <MenuItem Header="Fermer" Click="Exit_Click"/>                    
+                </MenuItem>
+                <MenuItem Header="GridWindow" Background="#FF888686" Click="GridWindow_Click"/>
+                <MenuItem Header="UniformGrid" Background="#FF888686" Click="UniformGrid_Click"/>
+                <MenuItem Header="DockPanel" Background="#FF888686" Click="DockPanel_Click"/>
+                <MenuItem Header="ListView" Background="#FF888686" Click="ListView_Click"/>
+
+
+                <MenuItem Header="About" Background="#FF888686"/>
+
+
+            </Menu>
+            <Button x:Name="SourceBtn"  Content="Affichage Sources" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0" Width="100" Click="SourceBtn_Click"/>
+            <GroupBox Header="Information Contact">
+                <StackPanel x:Name="grid" Orientation="Vertical">
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="26" Margin="0,10,0,0"><Run Language="fr-fr" Text="Contact"/><LineBreak/><Run Language="fr-fr"/></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Nom :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <TextBox x:Name="NomTbox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Margin="20,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Prénom :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <TextBox x:Name="PrenomTBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Margin="5,0,0,0"/>
+                    </StackPanel>
+                    <Button x:Name="ValiderBtn"  Content="Valider" Width="100" Click="ValiderBtn_Click"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Affichage des résultats" Height="200">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="ResultTB"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.AddButton{
+    background-color:green;
+    color: white;
+    width:100%;
+}
+
+.DetailsBtn{
+    background-color : dodgerblue;
+    color : white;
+}
+
+.EditBtn {
+    background-color: orange;
+    color: black;
+}
+
+.DeleteBtn {
+    background-color: darkred;
+    color: white;
+}

@@ -1,0 +1,9 @@
+Ado.NET
+
+Explorateur de serveurs => click droit PRF2022 => Propriétés
+	=> Copier la "chaine de connexion"
+	
+Outils - Gestionnaire de package NuGet - Gérer les pack pour la solution - Microsoft.Data.Sqlclient (4.1.0)
+	=> Rajouter dans le projet "FormationAdoNET"
+		=> using Microsoft.Data.SqlClient;
+

@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    background-image: url(https://live.staticflickr.com/8242/8662418996_fed0891918_c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 50%;
+    margin: 100px;
+    background-color: lightgray;
+    opacity: 80%;
+}
+
+.space {
+    margin: 10px;
+    text-align: auto;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 50px 0 0 0;
+}
+.checklabel{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn{
+    display: none;
+}
+
+.btn~span{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    vertical-align: middle;
+    opacity: 0.7;
+    font-size: 0.7em;
+    line-height: 1.9em;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#checknon{
+    background-color: rgb(212, 88, 30);
+    text-align: right;
+    transition: all 0.5s ease;
+    padding-right: 6px;
+    opacity: 1;
+}
+
+#checkoui{
+    background-color: green;
+    text-align: left;
+    transition: all 0.5s ease;
+    padding-left: 6px;
+    opacity: 0;
+}
+
+
+#round{
+    top: auto;
+    border-radius: 40px;
+    box-shadow: 1px rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
+
+.btn:checked~#round{
+    left: 35px;
+}
+
+.btn:checked~#checkoui{
+    opacity: 1;
+}
+
+.btn:checked~#checknon{
+    opacity: 0;
+}
+
+.myarea{
+    resize: none;
+}

@@ -1,0 +1,38 @@
+﻿<Window x:Class="IHMAnnuaireWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHMAnnuaireWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Height="400" Width="400">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Nom : "/>
+                <TextBox x:Name="NomTbox" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Prénom : "/>
+                <TextBox x:Name="PrenomTbox" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Téléphone : "/>
+                <TextBox x:Name="TelephoneTbox" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Email : "/>
+                <TextBox x:Name="EmailTbox" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Age : "/>
+                <TextBox x:Name="AgeTbox" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <Button x:Name="AjouterBtn" Content="Ajouter" Click="AjouterBtn_Click"/>
+        </StackPanel>
+        <StackPanel Height="400" Width="400">
+            <TextBlock Text="Affichage des personnes ajoutées" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="AffichageTBlock" />            
+        </StackPanel>
+    </StackPanel>
+</Window>

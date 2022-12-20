@@ -1,0 +1,12 @@
+.formation-list {
+    color: black;
+}
+.paddingTop {
+    padding-top: 20px;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

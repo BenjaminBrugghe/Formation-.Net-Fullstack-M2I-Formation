@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Les input et affichages</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TP-POO - Liste de contacts</h1>
+        <hr>
+        <p>Mise en application de la théorie <mark>POO</mark> en <mark>Javascript</mark></p>
+
+        <div class="card">
+
+            <!-- Tableau Contacts -->
+            <div>
+                <h3>Liste de contacts</h3>
+                <table>
+                    <caption></caption>
+                    <thead id="Infos">
+                        <th>Titre</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Date Naissance</th>
+                        <th>Telephone</th>
+                        <th>Email</th>
+                    </thead>
+                </table>
+            </div>
+
+
+            <!-- Boutons Mr, Mme -->
+            <div id="Genre" class="row m-1 Radio">
+                <h3>Ajouter Contact</h3>
+                <span id="Span">
+                    <label>Mr
+                        <input id="Mr" class="form-check-input" type="radio" name="Gender" value="Mr" checked>
+                    </label>
+                    <label>Mme
+                        <input id="Mme" class="form-check-input" type="radio" name="Gender" value="Mme"></label>
+                </span>
+            </div>
+
+            <!-- Nom, Prenom -->
+            <div class="row m-1">
+                <input type="text" id="lastname" class="col p-1 form-control" placeholder="Nom">
+                <input type="text" id="firstname" class="col p-1 form-control" placeholder="Prénom">
+            </div>
+
+            <!-- Naissance, Telephone, Email -->
+            <div class="row m-1">
+                <input type="date" id="naissance" class="col p-1 form-control" placeholder="jj/mm/aaaa">
+                <input type="text" id="telephone" class="col p-1 form-control" placeholder="Telephone">
+                <input type="text" id="Email" class="col p-1 form-control" placeholder="Email">
+            </div>
+
+            <!-- Bouton Ajouter -->
+            <div class="row m-1">
+                <button class="btn btn-success" id="btnValider">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Result">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./module/main.js"></script>
+</body>
+
+</html>

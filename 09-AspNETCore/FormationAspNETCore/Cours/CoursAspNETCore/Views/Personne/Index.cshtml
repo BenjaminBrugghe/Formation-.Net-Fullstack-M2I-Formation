@@ -1,0 +1,44 @@
+﻿@using System.Collections.ObjectModel
+@{
+    ViewData["Title"] = "Personne Index";
+}
+
+@model ObservableCollection<Personne>
+
+<div>
+    <h1> Personne View Index</h1>
+
+    @if (ViewBag.Data != null)
+    {
+        <div>@ViewBag.Data</div>
+    }
+    else
+    {
+        <div>Il n'y a rien dans le ViewBag</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Personne p in Model)
+            {
+                <tr>
+                    <th scope="row">@p.Id</th>
+                    <td>@p.Nom</td>
+                    <td>@p.Prenom</td>
+                    <td>@p.Email</td>
+                    <td>
+                        <a asp-controller="Personne" asp-action="Details" asp-route-id="@p.Id">Détails</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

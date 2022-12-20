@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.titre{
+    font-size: 2em;
+}
+.strong{
+    font-size: 2em;
+}
+.tableau{
+    /* border: 1px solid white; */
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black
+}
+
+
+
+
+table{
+    border-collapse: collapse;
+}
+caption{
+    text-align: left;
+}
+.Title{
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+th,tr,td {
+    padding: 5px;
+    border: 1px solid black;
+}

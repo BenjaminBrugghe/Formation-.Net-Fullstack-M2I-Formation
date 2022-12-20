@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = $"Details Personne N°{@Model.Id}";
+}
+
+@model Personne
+
+<h1> Personne View Index</h1>
+
+<div class="AffichageContacts">
+    <h1>Affichage du contact avec la méthode ToString()</h1>
+    @Model
+
+</div>
+
+<div class="DetailsContact card">
+    <h1>Détails du contact</h1>
+    <div class="row m-1 justify-content-center align-items-center">
+        <span class="col-6 form-control">
+            Id : @Model.Id
+        </span>
+    </div>
+    <div class="row m-1 justify-content-center align-items-center">
+        <span class="col-6 form-control">
+            Nom : @Model.Nom
+        </span>
+    </div>
+    <div class="row m-1 justify-content-center align-items-center">
+        <span class="col-6 form-control">
+            Prénom : @Model.Prenom
+        </span>
+    </div>
+    <div class="row m-1 justify-content-center align-items-center">
+        <span class="col-6 form-control">
+            Email : @Model.Email
+        </span>
+    </div>
+</div>

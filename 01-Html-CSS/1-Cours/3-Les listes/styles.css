@@ -1,0 +1,24 @@
+header{
+    background-color: orange;
+    text-decoration: underline;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+body{
+    background-image: url(https://img.freepik.com/photos-gratuite/vintage-nature-background-paysage-cocotier-plage-tropicale-ete_1484-2022.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    margin: 0;
+    margin-top: 0;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.style{
+    list-style-image: url(./logo.jpg);
+} 

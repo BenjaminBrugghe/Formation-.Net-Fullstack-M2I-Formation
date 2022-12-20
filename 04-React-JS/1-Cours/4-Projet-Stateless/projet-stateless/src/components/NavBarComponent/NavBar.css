@@ -1,0 +1,21 @@
+.bouton a {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.bouton {
+    background-color: rgb(40, 44, 52);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#idNavBar{
+    background-color: red;
+    padding-bottom: 5px;
+}

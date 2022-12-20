@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Les formulaires :</h1>
+        <div class="container">
+            <form action="">
+                <fieldset class="field">
+                    <legend>Formulaire</legend>
+                    <div class="space">
+                        <label for="Mr">Mr</label>
+                        <input type="radio" value="Mr" name="genre" checked>
+                        <label for="Mme">Mme</label>
+                        <input type="radio" value="Mme" name="genre">
+                        <label for="Mlle">Mlle</label>
+                        <input type="radio" value="Mlle" name="genre">
+                    </div>
+                    <div class="space">
+                        <label for="Nom">Nom</label>
+                        <input type="text" placeholder="Nom" name="Nom"><br>
+                    </div>
+                    <div class="space">
+                        <label for="Prenom">Prenom</label>
+                        <input type="text" placeholder="Prenom" name="Prenom">
+                    </div>
+                    <div class="space">
+                        <label for="Date">Date</label>
+                        <input type="date" name="Date">
+                    </div>
+                    <div class="space">
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" placeholder="Enter Password">
+                    </div>
+                    <div class="space">
+                        Moyen de transport :<br>
+                        <label for="checkbox">Permis A</label>
+                        <input type="checkbox" name="checkbox"><br>
+                        <label for="checkbox">Permis B</label>
+                        <input type="checkbox" name="checkbox"><br>
+                        <label for="checkbox">Autres</label>
+                        <input type="checkbox" name="checkbox">
+                    </div>
+                    <div class="space">
+                        Maitrisez-vous le C# ?<br>
+                        <label class="checklabel">
+                            <input type="checkbox" name="ch1" class="btn">
+                            <span id="checkoui">Oui</span>
+                            <span id="checknon">Non</span>
+                            <span id="round"></span>
+                        </label>
+                    </div>
+                    <div class="space">
+                        <label>Votre ville :</label>
+                        <select name="ville">Ville
+                            <option value=""></option>
+                            <option value="lille">Lille</option>
+                            <option value="roubaix">Roubaix</option>
+                            <option value="tourcoing">Tourcoing</option>
+                            <option value="croix">Croix</option>
+                            <option value="wattrelos">Wattrelos</option>
+                        </select>
+                    </div>
+                    <div class="space">
+                        <label>Ville/Pays:</label>
+                        <select name="villeMultiple" multiple>
+                            <optgroup label="Ville">
+                                <option value="lille">Lille</option>
+                                <option value="roubaix">Roubaix</option>
+                                <option value="tourcoing">Tourcoing</option>
+                                <option value="croix">Croix</option>
+                                <option value="wattrelos">Wattrelos</option>
+                            </optgroup>
+                            <optgroup label="Pays">
+                                <option value="France">France</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="Espagne">Espagne</option>
+                                <option value="Allemagne">Allemagne</option>
+                                <option value="Angleterre">Angleterre</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="space">
+                        <label for="Description">Veuillez entrer une description :</label>
+                        <textarea name="Description" cols="30" rows="10" placeholder="Description ici"
+                            class="myarea"></textarea>
+                    </div>
+                    <div class="space">
+                        <input type="submit" value="Valider">
+                        <button type="reset">Annuler</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

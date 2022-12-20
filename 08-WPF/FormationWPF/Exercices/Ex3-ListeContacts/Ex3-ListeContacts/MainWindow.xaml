@@ -1,0 +1,106 @@
+﻿<Window x:Class="Ex3_ListeContacts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex3_ListeContacts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListView Background="#FFFDB32E">
+            <UniformGrid Columns="2" HorizontalAlignment="Left">
+                <StackPanel Width="277" HorizontalAlignment="Left">
+                    <StackPanel Width="274" HorizontalAlignment="Left">
+                        <GroupBox Header="Personne">
+                            <StackPanel Margin="5,0,5,0">
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Nom :"/>
+                                    <TextBox x:Name="TextBoxNom" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Prénom :"/>
+                                    <TextBox x:Name="TextBoxPrenom" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Naissance :"/>
+                                    <DatePicker x:Name="SelectDateDeNaissance" Width="180px"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel Width="274" HorizontalAlignment="Left">
+                        <GroupBox Header="Contact">
+                            <StackPanel Margin="5,0,5,0">
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Téléphone :"/>
+                                    <TextBox x:Name="TextBoxTelephone" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Email :"/>
+                                    <TextBox x:Name="TextBoxEmail" Width="300px"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+
+                    <StackPanel Width="274" HorizontalAlignment="Left">
+                        <GroupBox Header="Adresse">
+                            <StackPanel Margin="5,0,5,0">
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="N° :"/>
+                                    <TextBox x:Name="TextBoxNumero" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Rue :"/>
+                                    <TextBox x:Name="TextBoxRue" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Code Postal :"/>
+                                    <TextBox x:Name="TextBoxCodePostal" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Ville :"/>
+                                    <TextBox x:Name="TextBoxVille" Width="300px"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                    <Label Content="Pays :"/>
+                                    <TextBox x:Name="TextBoxPays" Width="300px"/>
+                                </StackPanel>
+                                <TextBlock x:Name="TextBlockIDContact" Visibility="Collapsed"/>
+                                <Button x:Name="AjouterContact" Content="Ajouter" Margin="5,5,5,5" Click="AjouterPersonne_Click" />
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Left" Width="723" Margin="0,0,-400,0" Height="450" VerticalAlignment="Top">
+                    <TextBlock Text="Liste de contacts" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,10"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                        <TextBox x:Name="TextBoxRechercher" Width="550" HorizontalAlignment="Left"/>
+                        <Button x:Name="RechercherBtn" Content="Rechercher" Width="100" Height="20" Margin="10,-1,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <ListView x:Name="ListeBoxContact" ScrollViewer.VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Width="650" Height="330">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn x:Name="AffichageId" Width="30" Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                                    <GridViewColumn x:Name="AffichageNom" Width="150" Header="Nom" DisplayMemberBinding="{Binding Lastname}"/>
+                                    <GridViewColumn x:Name="AffichagePrenom" Width="150" Header="Prénom" DisplayMemberBinding="{Binding Firstname}"/>
+                                    <GridViewColumn x:Name="AffichageTelephone" Width="150" Header="Telephone" DisplayMemberBinding="{Binding PhoneNumber}"/>
+                                    <GridViewColumn x:Name="AffichageEmail" Width="175" Header="Email" DisplayMemberBinding="{Binding Email}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Height="50" Width="730" VerticalAlignment="Bottom">
+                        <Button Content="Modifier" Click="ModifierContactClick" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100"/>
+                        <Button Content="Supprimer" Click="SupprimerContactClick" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Margin="150,0,0,0"/>
+                        <Button Content="Details" Click="DetailsClick" HorizontalAlignment="Right" Width="100" VerticalAlignment="Center" Margin="200,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </UniformGrid>
+        </ListView>
+    </Grid>
+</Window>

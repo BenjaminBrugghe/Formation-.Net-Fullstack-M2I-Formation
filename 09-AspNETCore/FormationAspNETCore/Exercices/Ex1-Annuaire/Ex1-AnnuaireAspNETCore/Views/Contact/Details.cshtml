@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Details Contacts";
+}
+@model Contact
+
+<div class="container">
+    <div class="card details">
+        <h1 class="card-title"> Contact N°@Model.Id</h1>
+        <div class="Section">
+            <h4>Personne n°@Model.PersonId</h4>
+            <div class="row">
+                <div class="col-4">
+                    <b>Nom : </b> @Model.Lastname
+                </div>
+                <div class="col-4">
+                    <b>Prénom : </b> @Model.Firstname
+                </div>
+                <div class="col-4">
+                    <input asp-for="@Model.DateOfBirth" asp-format="{0:yyyy-MM-ddThh:mm}" class="form-control datePicker" />
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h4>Coordonnées</h4>
+            <div class="row">
+                <div class="col-6">
+                    <b>Téléphone : </b> @Model.PhoneNumber
+                </div>
+                <div class="col-6">
+                    <b>Email : </b> @Model.Email
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <h4>Adresse</h4>
+            <div class="row">
+                <div class="col-3">
+                    <b>N° : </b> @Model.ContactAddress.Number
+                </div>
+                <div class="col-9">
+                    <b>Road Name : </b> @Model.ContactAddress.RoadName
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <b>PostalCode : </b> @Model.ContactAddress.PostalCode
+                </div>
+                <div class="col-4">
+                    <b>City : </b> @Model.ContactAddress.Town
+                </div>
+                <div class="col-4">
+                    <b>Country : </b> @Model.ContactAddress.Country
+                </div>
+            </div>
+        </div>
+
+        <a asp-action="Index" asp-controller="Contact" asp-route-add="false">
+            <input type="button" class="btn btn-primary form-control" value="Retour" />
+        </a>
+    </div>
+</div>

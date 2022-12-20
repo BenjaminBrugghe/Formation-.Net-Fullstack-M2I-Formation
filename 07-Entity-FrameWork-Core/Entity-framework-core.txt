@@ -1,0 +1,32 @@
+Les commandes SQL se font automatiquement
+3 packages nuget :
+	Microsoft.EntityFrameworkCore.SqlServer
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
+	
+affichage > autres fenetres > console du gestionnaire de packages
+
+	> Add-migration Initial (crée le dossier Migrations)
+		> Crée la class Initial : Migration
+		
+	> Update-Database
+		> Crée les tables SQL
+		
+	> Remove-Migration >> Pour supprimer toutes les migrations faites depuis l'update-database
+	
+Gérer les secrets.json (ignorés par GIT) / (Replace App.Settings pour plus de sécurité)
+	> Package Microsoft.extensions.configuration.UserSecrets
+	> Click droit sur le projet > Gérer les données secrètes de l'utilisateur
+
+*****************************************************
+Repo pattern
+
+Dans le terminal "gestionnaire de package" >>> Pour récupérer les tables d'un autre projet :
+	> scaffold-dbcontext CHAINE-DE-CONNEXION NOM-DU-PACKAGE-NUGET (ex : Microsoft.EntityFrameworkCore.SqlServer)
+On peut ajouter des paramètres :
+-OutputDir NOM-DU-DOSSIER
+-ContextDir Datas
+-Context ApplicationDbContext
+
+	>>> PM> Scaffold-DbContext "Data Source = (LocalDb)\MSSQLLOCALDB; Initial Catalog = PRF2022_EFCore_Demo_Jointures; Integrated Security = True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Classes -ContextDir Datas -Context ApplicationDbContext
+

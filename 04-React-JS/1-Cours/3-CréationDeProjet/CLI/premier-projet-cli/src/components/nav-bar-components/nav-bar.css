@@ -1,0 +1,35 @@
+ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;          
+}
+
+li{
+    list-style-type : none;
+    margin-top: 15px; 
+}
+
+.lien{
+    font-size: 25px; 
+    text-decoration: none;
+    margin: 0 15px;
+    color:rgb(40, 40, 40);
+    font-weight: bold;
+}
+
+.lien.Active{
+    font-size: 25px; 
+    text-decoration: none;
+    margin: 0 15px;
+    color:rgb(40, 40, 40);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(40, 40, 40);
+}
+
+.lien.Active:hover{
+    color:rgb(40, 40, 40);
+}
+
+.lien:hover{
+    color: orangered;
+}

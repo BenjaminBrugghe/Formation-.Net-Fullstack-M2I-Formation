@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titre{
+    font-size: 2em;
+}
+.strong{
+    font-size: 2em;
+}
+
+.tableau{
+    border: 1px solid white;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 6px 6px 10px black
+}

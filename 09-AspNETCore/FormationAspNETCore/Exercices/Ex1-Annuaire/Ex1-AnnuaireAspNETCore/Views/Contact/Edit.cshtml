@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Update Contacts";
+}
+
+@model Contact
+
+<h1>Update contacts</h1>
+
+<div class="container">
+    <form asp-action="Edit" asp-controller="Contact" method="post">
+        <div class="card details">
+            <input value="@Model.Lastname" asp-for="@Model.Lastname" />
+        </div>
+        <div class="card details">
+            <input value="@Model.Firstname" asp-for="@Model.Firstname" />
+        </div>
+
+        <input required asp-for="@Model.DateOfBirth" asp-format="{0:yyyy-MM-ddThh:mm}" class="col-4 col-6 p-1 form-control" />
+
+        <div class="card details">
+            <input value="@Model.PhoneNumber" asp-for="@Model.PhoneNumber" />
+        </div>
+        <div class="card details">
+            <input value="@Model.Email" asp-for="@Model.Email" />
+        </div>
+        <div class="card details">
+            <input value="@Model.ContactAddress.Number" asp-for="@Model.ContactAddress.Number" />
+        </div>
+        <div class="card details">
+            <input value="@Model.ContactAddress.RoadName" asp-for="@Model.ContactAddress.RoadName" />
+        </div>
+        <div class="card details">
+            <input value="@Model.ContactAddress.PostalCode" asp-for="@Model.ContactAddress.PostalCode" />
+        </div>
+        <div class="card details">
+            <input value="@Model.ContactAddress.Town" asp-for="@Model.ContactAddress.Town" />
+        </div>
+        <div class="card details">
+            <input value="@Model.ContactAddress.Country" asp-for="@Model.ContactAddress.Country" />
+        </div>
+        <input type="submit" class="btn btn-primary form-control" value="Modifier" />
+    </form>
+</div>
+
+<a asp-action="Index" asp-controller="Contact" asp-route-add="false">
+    <input type="button" class="btn btn-secondary form-control" value="Annuler" />
+</a>
